@@ -14,6 +14,10 @@ We would much prefer it if you did not use any third party libraries such as Boo
 * The codebase only contains a simple file structure with no third party dependencies or libraries, this is done intentionally to show understanding of the fundamentals of web design and development.
 * You should spend approximately 2 hours on this task, if you go over or spend less time, that’s OK too! Just be fair to yourself.
 
+
+### Prerequisites 
+* Please find the design of the contact form inside the docs folder
+
 ### Contact Form Development:
 Fork the repository:
   ```sh
