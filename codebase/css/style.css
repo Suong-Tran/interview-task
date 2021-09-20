@@ -1,4 +1,12 @@
+/*************************************************************
+ * TABLE OF CONTENTS
+ * =================
+ * 1. GENERAL STYLES
+ * -- 1a. Common classes
+ * 2. MEDIA QUERIES
+ */
 
+ /* 1. GENERAL STYLES */
 * {
     box-sizing: border-box;
   }
@@ -47,6 +55,7 @@
     background-color: #A9A9A9;
   }
 
+  /* -- 1a. Common classes*/
   .form-container {
     border-radius: 5px;
     background-color: #f5f5ff;
@@ -90,7 +99,8 @@
 
 
 
-  /* Responsive layout - when the screen is less than 600px wide, form will be full screen */
+    /* 2. MEDIA QUERIES*/
+    /* Responsive layout - when the screen is less than 600px wide, form will be full screen */
     @media screen and (max-width: 600px) {
         form {
         width: 100%;
