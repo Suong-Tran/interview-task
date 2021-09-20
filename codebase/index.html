@@ -17,16 +17,60 @@
   <!-- Place favicon.ico in the root directory -->
 
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/style.css" <meta name="theme-color" content="#fafafa">
 
-  <meta name="theme-color" content="#fafafa">
 </head>
 
 <body>
 
   <!-- Add your site or application content here -->
-  <p>Saigon Digital - Start Technical Task here</p>
-  <p>Hello world! This is HTML5 Boilerplate.</p>
-  
+  <!-- <p>Saigon Digital - Start Technical Task here</p>
+  <p>Hello world! This is HTML5 Boilerplate.</p> -->
+
+
+  <div class="form-container">
+
+    <form novalidate> <!-- Novalidate so that we can use our own validation with js while also using email type-->
+
+      <!--Close button at the top right of the form-->
+      <div id="closeBtn-container">
+        <button id="closeBtn" class="close-button" aria-label="Close alert" type="button">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      
+      <h1>Send Us a Message</h1>
+      <!-- Input field for user name -->
+      <div>
+        <input type="text" id="userName" name="userName" placeholder="Full name"></input>
+      </div>
+
+      <div>
+        <!-- Input field for user email -->
+        <input type="Email" id="userEmail"  name="userEmail" placeholder="Your email"></input></br>
+        <span id="alertEmailMess" class="alert"></span>
+      </div>
+
+      <div>
+        <!-- Select-Option field for user to choose a subject -->
+        <select name="userSubject" id="userSubject">
+          <option disabled selected>I want to post</option>
+          <option value="family">Family</option>
+          <option value="friend">Friend</option>
+          <option value="fun">Fun</option>
+        </select>
+      </div>
+
+      <div>
+        <!-- Input field for user to enter their message -->
+        <textarea id="userMess" name="userMess" placeholder="Your message goes here..." ></textarea>
+      </div>
+
+      <input type="submit"  id="submitBtn" value="Submit form"></input>
+    </form>
+  </div>
+
+
   <script src="js/main.js"></script>
 
 

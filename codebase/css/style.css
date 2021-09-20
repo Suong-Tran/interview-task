@@ -1,0 +1,100 @@
+
+* {
+    box-sizing: border-box;
+  }
+
+  h1{
+    text-align: center;
+  }
+
+  input[type=text],input[type=email], select, textarea {
+    width: 80%;
+    padding: 12px;
+    margin: 20px;
+    border-style: hidden;
+    border-bottom: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+  }
+  textarea{
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    height:150px
+  }
+
+  form{
+      width:30%;
+      margin:auto;
+      text-align: center;
+      background-color:white;
+      border-radius: 12px;
+      padding: 10px;
+  }
+
+  input[type=submit] {
+    width: 80%;
+    background-color: #000;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    text-align: center;
+  }
+
+  /* Change the color of the submit button when hover over it */
+  input[type=submit]:hover {
+    background-color: #A9A9A9;
+  }
+
+  .form-container {
+    border-radius: 5px;
+    background-color: #f5f5ff;
+    padding: 20px;
+  }
+
+  .close-button{
+      font-size: 22px;
+      background-color: #fff;
+      text-align: right;
+      color:#a6a6a6;
+      border: 0.5px solid #e6e6e6;
+      border-radius: 50%;
+      padding: 3px 8px;
+      transition: border ease 0.5s, color ease 0.5s;
+    }
+    
+    /* When hover over the close button, the color will gradually become more and more visible */
+    /* If the button has been clicked, the color will stay instead of fading back to a dim gray color */
+    .close-button:hover,.close-button:focus{
+        border: 0.5px solid #000;
+        color: #000;
+    }
+
+
+
+    #closeBtn-container{
+        margin-right:10px;
+        text-align: right;
+    }
+
+    .alert{
+        color:#ff4000;  
+    }
+    
+
+    /* When focus on an input field, the placeholder will not be showed */
+    input:focus::placeholder {
+        color: transparent;
+    }
+
+
+
+  /* Responsive layout - when the screen is less than 600px wide, form will be full screen */
+    @media screen and (max-width: 600px) {
+        form {
+        width: 100%;
+        margin-top: 0;
+        }
+    }
+  
